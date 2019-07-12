@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Qurentis Lite Editor",
+    "description": "Simeple tekst verwerker met spellchecker.",
+    "version": "1",
+    "author": "Hans Beijk",
+    "content_scripts": [
+        {
+            "matches": ["https://kr8tig.qurentis.nl/ReportSupportingReport/*"],
+            "js": ["src/loader.js"],
+            "css": ["src/modal.css"]
+        }
+    ]
+}
