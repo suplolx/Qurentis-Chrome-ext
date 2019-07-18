@@ -81,6 +81,20 @@ if (window.location.href.split("/")[3] === "ReportSupportingReport") {
     localStorage.setItem("saved", textArea.value)
   })
 
+} else if (window.location.href === "https://kr8tig.qurentis.nl/Clients") {
+  
+
+let tableBody = document.querySelector("tbody")
+  setTimeout(function() {
+    console.log("[INFO]: Extensie geladen", tableBody);
+
+    for (let i = 0; i < tableBody.rows.length; i++){
+      console.log("[INFO] onlick event toegevoegd", tableBody.rows[i]);
+      tableBody.rows[i].onclick = function() {window.location.href = tableBody.rows[i].children[6].innerHTML.split('"')[1]};
+    }
+}, 500)
+  
+
 } else {
   
   var nameElement = document.querySelector(".col-md-9");

@@ -6,7 +6,7 @@
     "author": "Hans Beijk",
     "content_scripts": [
         {
-            "matches": ["https://kr8tig.qurentis.nl/ReportSupportingReport/*", "https://kr8tig.qurentis.nl/ReportSupporting/Details/*"],
+            "matches": ["https://kr8tig.qurentis.nl/ReportSupportingReport/*", "https://kr8tig.qurentis.nl/ReportSupporting/Details/*", "https://kr8tig.qurentis.nl/Clients"],
             "js": ["src/loader.js"],
             "css": ["src/modal.css"]
         }

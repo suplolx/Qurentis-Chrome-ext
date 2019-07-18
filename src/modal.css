@@ -66,6 +66,10 @@
     font-size:18px;
   }
   
+
+  tr {
+    cursor: pointer;
+  }
   
   @keyframes modalopen {
     from {
